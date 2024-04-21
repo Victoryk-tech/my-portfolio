@@ -72,7 +72,7 @@ span {
   text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
 .menu-icon {
-  font-size: 37px;
+  font-size: 2rem;
   z-index: 10001;
   cursor: pointer;
   display: none;
@@ -83,13 +83,14 @@ span {
 .nav-home {
   height: 100vh;
   display: flex;
-  right: 0;
+  right: -5rem;
+  top: 0;
   flex-direction: column;
   align-items: start;
   position: absolute;
   gap: 1rem;
   background: var(--bg-color);
-  padding: 1.7rem;
+  padding: 0 5rem 0 0.7rem;
   visibility: hidden;
 }
 .nav-home a {
@@ -104,12 +105,6 @@ span {
   text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
 
-.bx-x {
-  font-size: 35px;
-  z-index: 10001;
-  cursor: pointer;
-  display: none;
-}
 .h-btnn {
   display: inline-block;
   padding: 11px 26px;
@@ -136,7 +131,7 @@ main {
   display: flex;
   text-wrap: nowrap;
   gap: 5rem;
-  margin-top: 1rem;
+
   margin-bottom: 3rem;
 }
 .left {
@@ -145,20 +140,19 @@ main {
 
 .left h4 {
   font-size: 1.6rem;
-  margin-bottom: -2rem;
 }
 .left h1 {
   font-size: 3.5rem;
   font-weight: 900;
-  margin: 20px 0px 20px;
+
   line-height: 1.2;
 }
 .left h3 {
   font-size: var(--p-font);
   font-weight: 400;
   color: var(--other-color);
-  margin-top: -1rem;
-  margin-bottom: 15px;
+  margin-top: 1rem;
+  padding-bottom: 15px;
 }
 .right {
   align-items: top;
@@ -214,7 +208,7 @@ main {
   background: transparent;
   color: var(--main-color);
   border: 2px solid var(--main-color);
-  margin-left: 15px;
+  /* margin-left: 15px; */
   transition: all 0.5s ease;
 }
 .btn2:hover {
@@ -234,8 +228,6 @@ header.sticky {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1rem;
-  margin-left: 4rem;
-  padding: 2rem 3rem 2rem 4rem;
 }
 
 .about-img img {
@@ -513,33 +505,27 @@ footer {
   .social {
     margin-bottom: 20px;
   }
+  .bx-x {
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 5rem;
+  }
   .menu-icon {
     display: block;
     position: relative;
   }
-  .menu-home:hover > .nav-home {
+
+  /* .menu-home:hover > .nav-home {
     visibility: visible;
+  } */
+  .navigation {
+    display: none;
+  }
+  .top-btnn {
+    display: none;
   }
 
-  .navigation {
-    position: absolute;
-    top: 100%;
-    right: -240px;
-    width: 255px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    transition: all 0.5s ease;
-  }
-  .navigation a {
-    display: block;
-    padding: 17px;
-    font-size: 22px;
-  }
-  .navigation.active {
-    right: 0;
-  }
   .overall-main {
     margin-left: 1.5rem;
   }
